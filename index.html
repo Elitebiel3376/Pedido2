@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Presente Virtual 💙</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #0d0d0d;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: white;
+      font-size: 1.8rem;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .btn {
+      padding: 15px 40px;
+      font-size: 1.5rem;
+      color: #fff;
+      background: linear-gradient(45deg, #00c6ff, #0072ff);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(0, 162, 255, 0.7),
+                  0 0 30px rgba(0, 162, 255, 0.5);
+      transition: 0.3s ease-in-out;
+      animation: glow 2s infinite alternate;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #0072ff, #00c6ff);
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px rgba(0, 162, 255, 0.6),
+                    0 0 20px rgba(0, 162, 255, 0.4);
+      }
+      to {
+        box-shadow: 0 0 20px rgba(0, 162, 255, 1),
+                    0 0 40px rgba(0, 162, 255, 0.8);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>"é só um presente virtual idiota"</h1>
+  <button class="btn" onclick="ir()">💙 Clique</button>
+
+  <script>
+    function ir() {
+      window.location.href = "pedido.html"; // página de destino
+    }
+  </script>
+</body>
+</html>
